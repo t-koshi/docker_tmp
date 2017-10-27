@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :microposts
   get 'me/dashboard'
 
   devise_for :users, controllers: {
